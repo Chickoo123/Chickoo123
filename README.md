@@ -2,7 +2,7 @@
 
 # Hi, I'm Harshil Desai 👋
 
-### I build evidence-first tools that make Indian money data understandable.
+### I build evidence-first tools that hold Indian finance to its own rules.
 
 Fintech · public data · privacy-first web apps · applied AI with guardrails
 
@@ -19,25 +19,28 @@ Fintech · public data · privacy-first web apps · applied AI with guardrails
 <tr>
 <td width="50%" valign="top">
 
-### 💸 [PaisaTrail](https://github.com/Chickoo123/paisatrail)
-**Find the money leaks in your bank statement, without uploading it.**
+### 🔍 [LoanLens](https://github.com/Chickoo123/loanlens)
+**Check a loan offer against RBI's rules before you sign.**
 
-Parses Indian bank CSVs, decodes UPI/NEFT/ACH narrations into merchants, and detects **forgotten subscriptions, silent price hikes, double charges and spending spikes** using cadence analysis and robust statistics (MAD).
-Runs 100% in the browser behind a strict `connect-src 'none'` CSP.
+<a href="https://chickoo123.github.io/loanlens/"><img src="https://raw.githubusercontent.com/Chickoo123/loanlens/main/docs/hero.png" alt="LoanLens: advertised APR 34.50% vs recomputed 94.22%"></a>
 
-`JavaScript` `SVG charts` `node:test` `GitHub Pages`
-**[▶ Live demo](https://chickoo123.github.io/paisatrail/?demo)**
+Recomputes the true APR from a loan's Key Facts Statement using RBI's method (it **reproduces RBI's own worked example, 17.07%**). It flags the malpractices RBI has named, such as interest charged before disbursal, advance EMIs with interest on the full amount, and illegal pre-payment charges, and each finding cites the circular it relies on.
+
+`JavaScript` `IRR / APR maths` `RBI regulation` `18 test suites`
+**[▶ Live app](https://chickoo123.github.io/loanlens/)**
 
 </td>
 <td width="50%" valign="top">
 
-### 🔍 [LoanLens](https://github.com/Chickoo123/loanlens)
-**Pay off every loan years earlier, and know why.**
+### 💸 [PaisaTrail](https://github.com/Chickoo123/paisatrail)
+**Find the bank charges you can get reversed.**
 
-Month-by-month simulation of *all* your loans under **Avalanche, Snowball and Proportional** prepayment. Models reduce-tenure vs reduce-EMI, prepayment penalties, Sec 24(b) after-tax rates and EMI rollover, then answers **"prepay or invest?"**
+<a href="https://chickoo123.github.io/paisatrail/?demo"><img src="https://raw.githubusercontent.com/Chickoo123/paisatrail/main/docs/hero.png" alt="PaisaTrail: ₹545 of ₹2,080 in charges can be challenged"></a>
 
-`JavaScript` `Financial modelling` `13 test suites`
-**[▶ Live app](https://chickoo123.github.io/loanlens/)**
+Reads an Indian savings statement, matches every charge to its GST line, and tests it against RBI rules: minimum-balance penalties that pushed the balance negative, ATM fees within the free limit or above the ₹23 cap, online NEFT charges. Each claim shows the statement lines that prove it, and it drafts the dispute. Nothing leaves your browser.
+
+`JavaScript` `Statement parsing` `RBI regulation` `13 test suites`
+**[▶ Live demo](https://chickoo123.github.io/paisatrail/?demo)**
 
 </td>
 </tr>
